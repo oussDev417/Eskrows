@@ -1,0 +1,95 @@
+@php
+    $chooseUs = getContent('choose_us_one.content', true);
+    $chooseUsElements = getContent('choose_us_one.element', false, 4);
+@endphp
+
+
+
+
+<section class="about-us py-100">
+    <div class="container">
+        <div class="row gy-5 justify-content-between flex-wrap-reverse">
+
+            <div class="col-lg-6 col-md-12">
+                <div class="about--thumb">
+                    <div class="thumb-wrap d-flex justify-content-center align-items-center position-relative">
+                        <div class="reveal">
+                            <div
+                                class="element one position-absolute radius--50 d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                        </div>
+                        <div class="reveal">
+                            <div
+                                class="element two position-absolute radius--50 d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-handshake"></i>
+                            </div>
+                        </div>
+                        <div class="reveal">
+                            <div
+                                class="element three position-absolute radius--50 d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-lock"></i>
+                            </div>
+                        </div>
+
+                        <div class="reveal">
+                            <div
+                                class="element four position-absolute radius--50 d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thumb--two" data-aos="fade-out" data-aos-delay="400" data-aos-duration="1500">
+                        <img class="fit--img"
+                            src="{{ getImage(getFilePath('choose_us_one') . '/' . $chooseUs->data_values->image) }}"
+                            alt="...">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-5 col-md-12 d-flex flex-column justify-content-center">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-content mb-40">
+                            <div class="title-wrap">
+                                <div class="d-inline-flex heading--wrap">
+                                    <h6 class="heading fs--18 text--upper fw--700 text--base">
+                                        {{ __($chooseUs->data_values->heading) }}</h6>
+                                </div>
+                                <h2 class="title mb-3 fs--32 fw--800 wow animate__animated animate__fadeInUp splite-text"
+                                    data-splitting data-wow-delay="0.2s">{{ __($chooseUs->data_values->subheading) }}
+                                </h2>
+                                <div class="subtitle w--90 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                                    {{ __(strWords($chooseUs->data_values->description,15)) }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gy-4 mb-5">
+                    @foreach ($chooseUsElements ?? [] as $item)
+                        <div class="col-xxl-12 col-lg-12 col-md-6">
+                            <div class="service-key--box d-flex flex-column gap--16" data-aos="fade-left"
+                                data-aos-delay="400" data-aos-duration="1500">
+                                <div class="d-flex align-items-baseline gap--16">
+                                    <div
+                                        class="icon--wrap position-relative d-flex justify-content-center align-items-center radius--50 flex-shrink-0">
+                                        @php
+                                            echo $item->data_values->icon
+                                        @endphp
+                                    </div>
+                                    <div class="title--wrap">
+                                        <h6 class="title fs--18 fw--400 mb-1">{{__($item->data_values->title)}}</h6>
+                                        <p>{{__(strWords($item->data_values->description,15))}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

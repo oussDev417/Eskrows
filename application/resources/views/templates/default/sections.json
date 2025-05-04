@@ -1,0 +1,258 @@
+{
+    "banner_one": {
+        "builder": true,
+        "name": "Banner Section",
+        "content": {
+            "heading": "text",
+            "subheading": "text",
+            "button_one": "text",
+            "button_one_url": "url",
+            "button_two": "text",
+            "button_two_url": "url",
+            "images": {
+                "image": {
+                    "size": "66x66"
+                }
+            }
+        }
+    },
+
+    "header_links": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Header Links Section",
+        "element": {
+            "name": "text",
+            "slug": "text",
+            "modal": false
+        }
+    },
+
+    "about_one": {
+        "builder": true,
+        "name": "About Us",
+        "content": {
+            "images": {
+                "about_image": {
+                    "size": "322x441"
+                }
+            },
+            "title": "text",
+            "heading": "text",
+            "description": "textarea-rich"
+        },
+
+        "element": {
+            "icon": "icon",
+            "heading": "text",
+            "subheading": "text",
+            "modal": false
+        }
+    },
+
+    "choose_us_one": {
+        "builder": true,
+        "name": "Choose Us",
+        "content": {
+            "heading": "text",
+            "subheading": "text",
+            "description": "textarea",
+            "images": {
+                "image": {
+                    "size": "526x519"
+                }
+            }
+        },
+        "element": {
+            "icon": "icon",
+            "title": "text",
+            "description": "textarea",
+            "modal": false
+        }
+    },
+
+    "working_process": {
+        "builder": true,
+        "name": "Working Process",
+        "content": {
+            "heading": "text",
+            "subheading": "text",
+            "description": "textarea"
+        },
+        "element": {
+            "icon":"icon",
+            "title": "text",
+            "description": "textarea",
+            "modal": true
+        }
+    },
+
+    "working_map": {
+        "builder": true,
+        "name": "Working Map",
+        "content": {
+            "heading": "text",
+            "subheading": "text",
+            "description": "textarea"
+        }
+    },
+
+    "service_one": {
+        "builder": true,
+        "name": "Service Section",
+        "content": {
+            "heading": "text",
+            "subheading": "text",
+            "description": "textarea"
+        },
+        "element": {
+            "images": {
+                "image": {
+                    "size": "400x400"
+                }
+            },
+            "title": "text",
+            "description": "textarea",
+            "modal": true
+        }
+    },
+  
+    "policy_pages": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Policy Pages",
+        "element": {
+            "title": "text",
+            "details": "textarea-rich",
+            "modal": false
+        }
+    },
+
+    "faq_one": {
+        "builder": true,
+        "name": "FAQ Section",
+        "content": {
+            "heading": "text",
+            "subheading": "text",
+            "description": "textarea",
+            "images": {
+                "image": {
+                    "size": "340x408"
+                }
+            }
+        },
+        "element": {
+            "question": "text",
+            "answer": "textarea-rich",
+            "modal": false
+        }
+    },
+    "marque": {
+        "builder": true,
+        "name": "Marque Section",
+        "element": {
+          "images": {
+                "image": {
+                    "size": "161x41"
+                }
+            },
+            "modal": false
+        }
+    },
+
+    "testimonial_one": {
+        "builder": true,
+        "name": "Testimonials",
+        "content": {
+            "heading": "text",
+            "subheading": "text",
+            "description": "textarea"
+        },
+        "element": {
+            "name": "text",
+            "location": "text",
+            "description": "textarea-rich",
+      
+            "images": {
+                "client_img": {
+                    "size": "86x86"
+                }
+            },
+            "modal": true
+        }
+    },
+
+    "blog_one": {
+        "builder": true,
+        "name": "Blog Section",
+        "content": {
+            "heading": "text",
+            "subheading": "text",
+            "description": "textarea"
+        },
+        "element": {
+            "images": {
+                "blog_image": {
+                    "size": "806x450",
+                    "thumb": "400x220"
+                }
+            },
+            "title": "text",
+            "author": "text",
+            "description": "textarea-rich",
+            "modal": false
+        }
+    },
+ 
+    "social_icon": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Social Icons",
+        "element": {
+            "title": "text",
+            "social_icon": "icon",
+            "url": "text",
+            "modal": false
+        }
+    },
+
+    "contact_us_one": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Contact Us",
+        "content": {
+            "contact_number": "text",
+            "description": "textarea",
+            "email_address": "text",
+            "address": "text",
+            "support_team": "text",
+            "button_name": "text",
+            "text": "text",
+            "latitude": "text",
+            "longitude": "text",
+            "copyright_text": "textarea-rich"
+        }
+    },
+
+    "footer_important_links": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Footer - Important Links",
+        "element": {
+            "title": "text",
+            "url": "text",
+            "modal": true
+        }
+    },
+
+    "footer_company_links": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Footer - Company Links",
+        "element": {
+            "title": "text",
+            "url": "text",
+            "modal": true
+        }
+    }
+}
